@@ -15,4 +15,19 @@
          <lastmod>2023-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_editors/</loc>
+         <lastmod>2023-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_interpreters/</loc>
+         <lastmod>2023-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_online_resources/</loc>
+         <lastmod>2023-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
