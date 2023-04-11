@@ -15,4 +15,7 @@ nav:
   - Home : 'index.md'
   - Tables : 
     - 'Geospatial Libraries' : 'geospatial_libraries.md'
-    - 'Python Books' : 'python_books.md'
+    - 'Books' : 'python_books.md'
+    - 'Online Resources' : 'python_online_resources.md'
+    - 'Editors / IDEs' : 'python_editors.md'
+    - 'Interpreters / Implementations' : 'python_interpreters.md'
