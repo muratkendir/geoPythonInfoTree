@@ -1,1 +1,17 @@
 site_name: geoPythonInfoTree
+site_url: https://muratkendir.github.io/geoPythonInfoTree
+theme: 
+  name: readthedocs
+
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+
+nav:
+  - Home : 'index.md'
+  - Tables : 
+    - 'Geospatial Libraries' : 'geospatial_libraries.md'
