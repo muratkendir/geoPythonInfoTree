@@ -1,7 +1,7 @@
 site_name: geoPythonInfoTree
 site_url: https://muratkendir.github.io/geoPythonInfoTree
 theme:
-    name: gitbook
+    name: bootstrap
 
 markdown_extensions:
   - pymdownx.critic
@@ -11,12 +11,16 @@ markdown_extensions:
   - pymdownx.tilde
   - attr_list
 
-nav:
-  - Home : 'index.md'
-  - Tables : 
-    - 'Geospatial Libraries' : 'geospatial_libraries.md'
-    - 'Books' : 'python_books.md'
-    - 'Online Resources' : 'python_online_resources.md'
-    - 'Editors / IDEs' : 'python_editors.md'
-    - 'Interpreters / Implementations' : 'python_interpreters.md'
-    - 'SDKs (or APIs)' : 'python_sdks.md'
+# nav:
+#   - Home : 'index.md'
+#   - Tables : 
+#     - 'Geospatial Libraries' : 'geospatial_libraries.md'
+#     - 'Books' : 'python_books.md'
+#     - 'Online Resources' : 'python_online_resources.md'
+#     - 'Editors / IDEs' : 'python_editors.md'
+#     - 'Interpreters / Implementations' : 'python_interpreters.md'
+#     - 'SDKs (or APIs)' : 'python_sdks.md'
+
+plugins:
+  - search:
+    lang: en
