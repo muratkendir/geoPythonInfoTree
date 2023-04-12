@@ -19,3 +19,4 @@ nav:
     - 'Online Resources' : 'python_online_resources.md'
     - 'Editors / IDEs' : 'python_editors.md'
     - 'Interpreters / Implementations' : 'python_interpreters.md'
+    - 'SDKs (or APIs)' : 'python_sdks.md'
