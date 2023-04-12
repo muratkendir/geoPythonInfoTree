@@ -1,594 +1,671 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://muratkendir.github.io/geoPythonInfoTree/geospatial_libraries/" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Geospatial Libraries - geoPythonInfoTree</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-    
+<html lang="en">
+    <head>
       <script>
-        // Current page data
-        var mkdocs_page_name = "Geospatial Libraries";
-        var mkdocs_page_input_path = "geospatial_libraries.md";
-        var mkdocs_page_url = "/geoPythonInfoTree/geospatial_libraries/";
+	// Hack for scrolling window when linking to anchor tag with fixed nav header
+        var shiftWindow = function() { scrollBy(0, -75) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
       </script>
-    
-    <script src="../js/jquery-3.6.0.min.js" defer></script>
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> geoPythonInfoTree
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Tables</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Geospatial Libraries</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../python_books/">Books</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../python_online_resources/">Online Resources</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../python_editors/">Editors / IDEs</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../python_interpreters/">Interpreters / Implementations</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../python_sdks/">SDKs (or APIs)</a>
-                  </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">geoPythonInfoTree</a>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>Tables &raquo;</li>
-      <li>Geospatial Libraries</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <table>
+        
+        <link rel="canonical" href="https://muratkendir.github.io/geoPythonInfoTree/geospatial_libraries/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Geospatial Libraries - geoPythonInfoTree</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/http.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/base.js"></script> 
+    </head>
+
+    <body class="">
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<div class="container">
+	<a class="navbar-brand" href="..">geoPythonInfoTree</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse">
+          <!-- Main navigation -->
+          <nav class="nav">
+            <ul class="navbar-nav">
+              <li >
+                <a class="nav-link" href="..">Home</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="nav-dropdown-Tables">Tables <b class="caret"></b></a>
+                <div class="dropdown-menu" aria-labelledby="nav-dropdown-Tables">
+                  
+<a href="./" class="dropdown-item active">Geospatial Libraries</a>
+                  
+<a href="../python_books/" class="dropdown-item">Books</a>
+                  
+<a href="../python_online_resources/" class="dropdown-item">Online Resources</a>
+                  
+<a href="../python_editors/" class="dropdown-item">Editors / IDEs</a>
+                  
+<a href="../python_interpreters/" class="dropdown-item">Interpreters / Implementations</a>
+                  
+<a href="../python_sdks/" class="dropdown-item">SDKs (or APIs)</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+		<i class="fa fa-search"></i> Search
+              </a>
+            </li>
+          </ul>
+	</div>
+	</div>
+      </nav><div id="content" class="container">
+        
+      <div class="row">
+        <div class="col-md-9" role="main">
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+    
+    <li class="breadcrumb-item">Tables</li>
+    
+    
+    <li class="breadcrumb-item active" aria-current="page">Geospatial Libraries</li>
+  </ol>
+</nav>
+
+
+<table>
 <thead>
 <tr>
-<th style="text-align: center;"><strong>Library Name</strong></th>
-<th style="text-align: center;"><strong>Data Type</strong></th>
-<th style="text-align: center;"><strong>Accessible Data Sources</strong></th>
-<th style="text-align: center;"><strong>Tags</strong></th>
+<th align="center"><strong>Library Name</strong></th>
+<th align="center"><strong>Data Type</strong></th>
+<th align="center"><strong>Accessible Data Sources</strong></th>
+<th align="center"><strong>Tags</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><a href="https://altair-viz.github.io/index.html">altair</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">visualization</td>
+<td align="center"><a href="https://altair-viz.github.io/index.html">altair</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">visualization</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pro.arcgis.com/en/pro-app/latest/arcpy/functions/alphabetical-list-of-arcpy-functions.htm">ArcPy</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;">ArcGIS</td>
-<td style="text-align: center;">ArcGIS</td>
+<td align="center"><a href="https://pro.arcgis.com/en/pro-app/latest/arcpy/functions/alphabetical-list-of-arcpy-functions.htm">ArcPy</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center">ArcGIS</td>
+<td align="center">ArcGIS</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://matplotlib.org/basemap/users/index.html">basemap</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">projection</td>
+<td align="center"><a href="https://matplotlib.org/basemap/users/index.html">basemap</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">projection</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/CanopySimulations/canopy-python">canopy</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td align="center"><a href="https://github.com/CanopySimulations/canopy-python">canopy</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://scitools.org.uk/cartopy/docs/latest/reference/index.html">cartopy</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">analysis visualization</td>
+<td align="center"><a href="https://scitools.org.uk/cartopy/docs/latest/reference/index.html">cartopy</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">analysis visualization</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/sciencectn/cgal-bindings">Cgal-bindings</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td align="center"><a href="https://github.com/sciencectn/cgal-bindings">Cgal-bindings</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://datacube-core.readthedocs.io/en/latest/api/core-classes/datacube.html">DataCube</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;">Satellite Imagery</td>
-<td style="text-align: center;">satellite imagery</td>
+<td align="center"><a href="https://datacube-core.readthedocs.io/en/latest/api/core-classes/datacube.html">DataCube</a></td>
+<td align="center">Raster</td>
+<td align="center">Satellite Imagery</td>
+<td align="center">satellite imagery</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pypi.org/project/descartes/">descartes</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">image</td>
+<td align="center"><a href="https://pypi.org/project/descartes/">descartes</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">image</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://earthpy.readthedocs.io/en/latest/">earthpy</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">plot</td>
+<td align="center"><a href="https://earthpy.readthedocs.io/en/latest/">earthpy</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">plot</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://docs.eoxserver.org/en/stable/apidoc/modules.html">EoxServer</a></td>
-<td style="text-align: center;">Raster &amp; Vector</td>
-<td style="text-align: center;">Earth Observation</td>
-<td style="text-align: center;">ESA</td>
+<td align="center"><a href="https://docs.eoxserver.org/en/stable/apidoc/modules.html">EoxServer</a></td>
+<td align="center">Raster &amp; Vector</td>
+<td align="center">Earth Observation</td>
+<td align="center">ESA</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://fiona.readthedocs.io/en/stable/">Fiona</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">read write</td>
+<td align="center"><a href="https://fiona.readthedocs.io/en/stable/">Fiona</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">read write</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://docs.safe.com/fme/html/fmepython/index.html">FME Python</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">FME</td>
+<td align="center"><a href="https://docs.safe.com/fme/html/fmepython/index.html">FME Python</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">FME</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://python-visualization.github.io/folium/">Folium</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">web map leaflet</td>
+<td align="center"><a href="https://python-visualization.github.io/folium/">Folium</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">web map leaflet</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://gdal.org/api/python.html">GDAL</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">manipulation</td>
+<td align="center"><a href="https://gdal.org/api/python.html">GDAL</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">manipulation</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://geemap.org/">geemap</a></td>
-<td style="text-align: center;">Raster &amp; Vector</td>
-<td style="text-align: center;">Google</td>
-<td style="text-align: center;">earth engine</td>
+<td align="center"><a href="https://geemap.org/">geemap</a></td>
+<td align="center">Raster &amp; Vector</td>
+<td align="center">Google</td>
+<td align="center">earth engine</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://geoalchemy-2.readthedocs.io/en/latest/index.html">GeoAlchemy2</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">SpatialLite PostGIS</td>
+<td align="center"><a href="https://geoalchemy-2.readthedocs.io/en/latest/index.html">GeoAlchemy2</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">SpatialLite PostGIS</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://geographiclib.sourceforge.io/1.52/python/index.html">geographiclib</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">geodesic calculations</td>
+<td align="center"><a href="https://geographiclib.sourceforge.io/1.52/python/index.html">geographiclib</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">geodesic calculations</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/jwass/geojsonio.py">geojsonio</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">geojson</td>
+<td align="center"><a href="https://github.com/jwass/geojsonio.py">geojsonio</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">geojson</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/geomet/geomet">Geomet</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">geojson WKT WKB</td>
+<td align="center"><a href="https://github.com/geomet/geomet">Geomet</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">geojson WKT WKB</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://geopandas.org/en/stable/docs.html">Geopandas</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">pandas</td>
+<td align="center"><a href="https://geopandas.org/en/stable/docs.html">Geopandas</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">pandas</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://residentmario.github.io/geoplot/api_reference.html">geoplot</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">visualization</td>
+<td align="center"><a href="https://residentmario.github.io/geoplot/api_reference.html">geoplot</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">visualization</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/geopy/geopy">Geopy</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;">Nominatim Google</td>
-<td style="text-align: center;">geocoder</td>
+<td align="center"><a href="https://github.com/geopy/geopy">Geopy</a></td>
+<td align="center">Vector</td>
+<td align="center">Nominatim Google</td>
+<td align="center">geocoder</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://libgeos.org/">Geos</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">JTS</td>
+<td align="center"><a href="https://libgeos.org/">Geos</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">JTS</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/KipCrossing/geotiff">geotiff</a></td>
-<td style="text-align: center;">raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">tif</td>
+<td align="center"><a href="https://github.com/KipCrossing/geotiff">geotiff</a></td>
+<td align="center">raster</td>
+<td align="center"></td>
+<td align="center">tif</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://gippy.readthedocs.io/en/latest/">gippy</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">image processing</td>
+<td align="center"><a href="https://gippy.readthedocs.io/en/latest/">gippy</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">image processing</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://grasswiki.osgeo.org/wiki/GRASS_Python_Scripting_Library">Grass</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td align="center"><a href="https://grasswiki.osgeo.org/wiki/GRASS_Python_Scripting_Library">Grass</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://h3geo.org/docs/">h3</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">uber</td>
+<td align="center"><a href="https://h3geo.org/docs/">h3</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">uber</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/jupyter-widgets/ipyleaflet">ipyleaflet</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">web map leaflet</td>
+<td align="center"><a href="https://github.com/jupyter-widgets/ipyleaflet">ipyleaflet</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">web map leaflet</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="http://istsos.org/en/latest/doc/">istSOS</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Sensor</td>
+<td align="center"><a href="http://istsos.org/en/latest/doc/">istSOS</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">Sensor</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/tmontaigu/laszip-python">laszip</a></td>
-<td style="text-align: center;">PointCloud</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">LAS LAZ</td>
+<td align="center"><a href="https://github.com/tmontaigu/laszip-python">laszip</a></td>
+<td align="center">PointCloud</td>
+<td align="center"></td>
+<td align="center">LAS LAZ</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://liblas.org/tutorial/python.html">liblas</a></td>
-<td style="text-align: center;">PointCloud</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">LAS LAZ</td>
+<td align="center"><a href="https://liblas.org/tutorial/python.html">liblas</a></td>
+<td align="center">PointCloud</td>
+<td align="center"></td>
+<td align="center">LAS LAZ</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/osmcode/pyosmium">libosmium</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;">OSM</td>
-<td style="text-align: center;">OSM</td>
+<td align="center"><a href="https://github.com/osmcode/pyosmium">libosmium</a></td>
+<td align="center">Vector</td>
+<td align="center">OSM</td>
+<td align="center">OSM</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://lidar.gishub.org/">LİDAR</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">DEM</td>
+<td align="center"><a href="https://lidar.gishub.org/">LİDAR</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">DEM</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://mapbox-mapboxgl-jupyter.readthedocs-hosted.com/en/latest/">mapboxgl-jupyter</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;">mapbox</td>
-<td style="text-align: center;">mapbox</td>
+<td align="center"><a href="https://mapbox-mapboxgl-jupyter.readthedocs-hosted.com/en/latest/">mapboxgl-jupyter</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center">mapbox</td>
+<td align="center">mapbox</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/pysal/mapclassify">mapclassify</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">choropleth classification</td>
+<td align="center"><a href="https://github.com/pysal/mapclassify">mapclassify</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">choropleth classification</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://mapnik.org/docs/v2.2.0/api/python/index.html">Mapnik</a></td>
-<td style="text-align: center;">raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Mapnik Boost</td>
+<td align="center"><a href="https://mapnik.org/docs/v2.2.0/api/python/index.html">Mapnik</a></td>
+<td align="center">raster</td>
+<td align="center"></td>
+<td align="center">Mapnik Boost</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://matplotlib.org/stable/api/index.html">MatPlotLib</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">visualization</td>
+<td align="center"><a href="https://matplotlib.org/stable/api/index.html">MatPlotLib</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">visualization</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://www.mdal.xyz/api/python_api.html#python-api">mdal</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">mesh</td>
+<td align="center"><a href="https://www.mdal.xyz/api/python_api.html#python-api">mdal</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">mesh</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://networkx.org/documentation/stable/reference/index.html">networkx</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">network analysis</td>
+<td align="center"><a href="https://networkx.org/documentation/stable/reference/index.html">networkx</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">network analysis</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://numpy.org/doc/stable/reference/index.html#reference">Numpy</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Array</td>
+<td align="center"><a href="https://numpy.org/doc/stable/reference/index.html#reference">Numpy</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">Array</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pypi.org/project/opencv-python/">Opencv-python</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Vision</td>
+<td align="center"><a href="https://pypi.org/project/opencv-python/">Opencv-python</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">Vision</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://openrouteservice.org/dev/#/api-docs">openrouteservice</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;">openrouteservice</td>
-<td style="text-align: center;">route</td>
+<td align="center"><a href="https://openrouteservice.org/dev/#/api-docs">openrouteservice</a></td>
+<td align="center">Vector</td>
+<td align="center">openrouteservice</td>
+<td align="center">route</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://osmnx.readthedocs.io/en/stable/index.html">OSMnx</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;">osm</td>
-<td style="text-align: center;">network analysis</td>
+<td align="center"><a href="https://osmnx.readthedocs.io/en/stable/index.html">OSMnx</a></td>
+<td align="center">Vector</td>
+<td align="center">osm</td>
+<td align="center">network analysis</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="http://udst.github.io/pandana/">pandana</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">pandas network</td>
+<td align="center"><a href="http://udst.github.io/pandana/">pandana</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">pandas network</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pdal.io/python.html">pdal</a></td>
-<td style="text-align: center;">PointCloud</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">pointcloud</td>
+<td align="center"><a href="https://pdal.io/python.html">pdal</a></td>
+<td align="center">PointCloud</td>
+<td align="center"></td>
+<td align="center">pointcloud</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/kuanb/peartree">peartree</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">network</td>
+<td align="center"><a href="https://github.com/kuanb/peartree">peartree</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">network</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/herrkaefer/psycopgr">psycopgr</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">pgrouting</td>
+<td align="center"><a href="https://github.com/herrkaefer/psycopgr">psycopgr</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">pgrouting</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pycsw.org/">pyCWS</a></td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">CSW</td>
+<td align="center"><a href="https://pycsw.org/">pyCWS</a></td>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center">CSW</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://docs.pygeoapi.io/en/stable/index.html">pygeoapi</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">OGC Feature API</td>
+<td align="center"><a href="https://docs.pygeoapi.io/en/stable/index.html">pygeoapi</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">OGC Feature API</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://www.pygmt.org/latest/">PyGMT</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;">Blue Marble</td>
-<td style="text-align: center;">generic mapping tools</td>
+<td align="center"><a href="https://www.pygmt.org/latest/">PyGMT</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center">Blue Marble</td>
+<td align="center">generic mapping tools</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pylas.readthedocs.io/en/latest/index.html">pylas</a></td>
-<td style="text-align: center;">PointCloud</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">LAS LAZ</td>
+<td align="center"><a href="https://pylas.readthedocs.io/en/latest/index.html">pylas</a></td>
+<td align="center">PointCloud</td>
+<td align="center"></td>
+<td align="center">LAS LAZ</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://geospace-code.github.io/pymap3d/">pymap3d</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">ecef coordinate</td>
+<td align="center"><a href="https://geospace-code.github.io/pymap3d/">pymap3d</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">ecef coordinate</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pyproj4.github.io/pyproj/latest/">pyproj</a></td>
-<td style="text-align: center;">Raster &amp; Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">CS</td>
+<td align="center"><a href="https://pyproj4.github.io/pyproj/latest/">pyproj</a></td>
+<td align="center">Raster &amp; Vector</td>
+<td align="center"></td>
+<td align="center">CS</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://qgis.org/pyqgis/master/">pyQGIS</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">QGIS</td>
+<td align="center"><a href="https://qgis.org/pyqgis/master/">pyQGIS</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">QGIS</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/MKuranowski/pyroutelib3">pyroutelib3</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;">osm</td>
-<td style="text-align: center;">routing</td>
+<td align="center"><a href="https://github.com/MKuranowski/pyroutelib3">pyroutelib3</a></td>
+<td align="center">Vector</td>
+<td align="center">osm</td>
+<td align="center">routing</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pysal.org/libpysal/api.html">pysal</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">analysis</td>
+<td align="center"><a href="https://pysal.org/libpysal/api.html">pysal</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">analysis</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/GeospatialPython/pyshp">pyshp</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">shape</td>
+<td align="center"><a href="https://github.com/GeospatialPython/pyshp">pyshp</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">shape</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://pywps.org/">pyWPS</a></td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">WPS</td>
+<td align="center"><a href="https://pywps.org/">pyWPS</a></td>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center">WPS</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://rasterio.readthedocs.io/en/latest/">Rasterio</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td align="center"><a href="https://rasterio.readthedocs.io/en/latest/">Rasterio</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://docs.python.org/3/library/re.html">Re</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">regular expressions</td>
+<td align="center"><a href="https://docs.python.org/3/library/re.html">Re</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">regular expressions</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://routingpy.readthedocs.io/en/latest/?badge=latest">routingpy</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;">google ors here</td>
-<td style="text-align: center;">routing</td>
+<td align="center"><a href="https://routingpy.readthedocs.io/en/latest/?badge=latest">routingpy</a></td>
+<td align="center">Vector</td>
+<td align="center">google ors here</td>
+<td align="center">routing</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="http://rsgislib.org/rsgislib.html">RSGISLib</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">remote sensing</td>
+<td align="center"><a href="http://rsgislib.org/rsgislib.html">RSGISLib</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">remote sensing</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://toblerity.org/rtree/">RTree</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Spatial indexing</td>
+<td align="center"><a href="https://toblerity.org/rtree/">RTree</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">Spatial indexing</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://scikit-image.org/docs/stable/api/api.html">scikit</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">image</td>
+<td align="center"><a href="https://scikit-image.org/docs/stable/api/api.html">scikit</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">image</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://sentinelhub-py.readthedocs.io/en/latest/">sentinelhub</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;">sentinel landsat modis</td>
-<td style="text-align: center;"></td>
+<td align="center"><a href="https://sentinelhub-py.readthedocs.io/en/latest/">sentinelhub</a></td>
+<td align="center">Raster</td>
+<td align="center">sentinel landsat modis</td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://shapely.readthedocs.io/en/stable/">Shapely</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td align="center"><a href="https://shapely.readthedocs.io/en/stable/">Shapely</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://udst.github.io/urbansim/index.html">urbansim</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">statistical models</td>
+<td align="center"><a href="https://udst.github.io/urbansim/index.html">urbansim</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">statistical models</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://www.fatiando.org/verde/latest/">verde</a></td>
-<td style="text-align: center;">Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">gridding</td>
+<td align="center"><a href="https://www.fatiando.org/verde/latest/">verde</a></td>
+<td align="center">Raster</td>
+<td align="center"></td>
+<td align="center">gridding</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://github.com/giswqs/whitebox-python">whitebox</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">analysis</td>
+<td align="center"><a href="https://github.com/giswqs/whitebox-python">whitebox</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">analysis</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://gemgis.readthedocs.io">GemGIS</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">height elevation</td>
+<td align="center"><a href="https://gemgis.readthedocs.io">GemGIS</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">height elevation</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://movingpandas.github.io/movingpandas/">MovingPandas</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">moving</td>
+<td align="center"><a href="https://movingpandas.github.io/movingpandas/">MovingPandas</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">moving</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://spatialucr.github.io/geosnap-guide">GeoSnap</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">Neighbourhood</td>
+<td align="center"><a href="https://spatialucr.github.io/geosnap-guide">GeoSnap</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">Neighbourhood</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://corteva.github.io/geocube">GeoCube</a></td>
-<td style="text-align: center;">Vector</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">geopandas xarray</td>
+<td align="center"><a href="https://corteva.github.io/geocube">GeoCube</a></td>
+<td align="center">Vector</td>
+<td align="center"></td>
+<td align="center">geopandas xarray</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://docs.sqlalchemy.org/en/20/">SQLAlchemy</a></td>
-<td style="text-align: center;">Database</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">SQL</td>
+<td align="center"><a href="https://docs.sqlalchemy.org/en/20/">SQLAlchemy</a></td>
+<td align="center">Database</td>
+<td align="center"></td>
+<td align="center">SQL</td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="https://geoviews.org/">GeoViews</a></td>
-<td style="text-align: center;">Vector &amp; Raster</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">geographic</td>
+<td align="center"><a href="https://geoviews.org/">GeoViews</a></td>
+<td align="center">Vector &amp; Raster</td>
+<td align="center"></td>
+<td align="center">geographic</td>
 </tr>
 </tbody>
 </table>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../python_books/" class="btn btn-neutral float-right" title="Books">Next <span class="icon icon-circle-arrow-right"></span></a>
+
+<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+  <li class="last-updated-holder displayDate loading">
+    <span class="last-updated-text">Last updated:</span>
+    <time role="presentation" datetime="2018-10-25T00:00:00.000Z" data-article-date-source="ms.date"></time>
+  </li>
+<!--
+  <li class="readingTime">
+    2 minutes to read
+  </li>
+-->
+  <li class="contributors-holder">
+    <span class="contributors-text">Contributors</span>
+    <ul class="contributors" data-bi-name="contributors"></ul>
+  </li>
+</ul>
+</div>
+        <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
-        </div>
+    <div id="toc-collapse" class="navbar-collapse collapse card">
+        <ul class="nav flex-column bs-sidenav">
+        </ul>
+    </div>
+</div></div>
+      </div>
       </div>
 
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../python_books/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
-</div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme_extra.js" defer></script>
-    <script src="../js/theme.js" defer></script>
+      <footer class="col-md-12">
+	<hr>
+	<div class="container">
+	</div>
+      </footer>
+      <script>
+	var base_url = "..",
+            shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+      </script>
+      <script src="../js/base.js" defer></script>
       <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
 
-</body>
+      <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="h4 modal-title">Keyboard Shortcuts</p>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
 </html>
