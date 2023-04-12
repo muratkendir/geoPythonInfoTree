@@ -1,7 +1,5 @@
 site_name: geoPythonInfoTree
 site_url: https://muratkendir.github.io/geoPythonInfoTree
-theme:
-    name: mkdocs-material
 
 # markdown_extensions:
 #   - pymdownx.critic
