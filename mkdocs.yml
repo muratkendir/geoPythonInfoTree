@@ -18,3 +18,4 @@ nav:
    - 'Editors / IDEs' : 'python_editors.md'
    - 'Interpreters / Implementations' : 'python_interpreters.md'
    - 'SDKs (or APIs)' : 'python_sdks.md'
+   - 'Pyhthon GUI Libraries' : 'python_gui_libraries.md'
