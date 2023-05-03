@@ -17,6 +17,10 @@
 | [A Podcast For The Geospatial Community][14] |  | podcast | EN |
 | [Real Python][15] |  | podcast, reading, video | EN |
 | [FreeCodeCamp][16] |  | video, reading, exercise | EN |
+| [Harvard Python Course][17] |  | reading, exercise | EN |
+| [Corey Schafer][18] |  | video | EN |
+| [Project Based Learning][19] |  | project, exercise | EN |
+
 
 [1]: https://automating-gis-processes.github.io
 [2]: https://www.codecademy.com/catalog/language/python
@@ -33,3 +37,6 @@
 [14]: https://mapscaping.com/
 [15]: https://realpython.com/
 [16]: https://www.freecodecamp.org
+[17]: https://cs50.harvard.edu/python/2022/
+[18]: https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
+[19]: https://github.com/practical-tutorials/project-based-learning
