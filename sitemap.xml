@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/geospatial_libraries/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/geospatial_libraries/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_books/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/python_books/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_editors/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/python_editors/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_gui_libraries/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/python_gui_libraries/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_interpreters/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/python_interpreters/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_online_resources/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/python_online_resources/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://muratkendir.github.io/geoPythonInfoTree/python_sdks/</loc>
+         <loc>https://tum-gis.github.io/geoPythonInfoTree/python_sdks/</loc>
          <lastmod>2023-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
