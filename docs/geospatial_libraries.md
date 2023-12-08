@@ -83,6 +83,10 @@
 | [GeoDjango][81] | Vector & Raster |  | web framework |
 | [PyGIMLi][82] | Vector & Raster |  | geophysics |
 | [PyNIO][83] | Vector & Raster |  | climate weather |
+| [OWSLib][84] | Vector & Raster | wms wfs wmts |
+| [PyOGC][85] | Vector & Raster | wms wfs feature |
+| [Plotly][86] | Raster | wms wmts xyz |
+| [pyDeck][87] | Vector & Raster | map geojson 3D |
 
 [1]: https://altair-viz.github.io/index.html
 [2]: https://pro.arcgis.com/en/pro-app/latest/arcpy/functions/alphabetical-list-of-arcpy-functions.htm
@@ -167,3 +171,7 @@
 [81]: https://docs.djangoproject.com/en/3.2/ref/contrib/gis/
 [82]: https://www.pygimli.org/documentation.html
 [83]: https://www.pyngl.ucar.edu/Nio.shtml
+[84]: https://owslib.readthedocs.io/en/latest/
+[85]: https://github.com/RyanWalker277/PyOGC
+[86]: https://plotly.com/python/
+[87]: https://deckgl.readthedocs.io/en/latest/index.html

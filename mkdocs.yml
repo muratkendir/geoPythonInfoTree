@@ -1,5 +1,5 @@
 site_name: geoPythonInfoTree
-site_url: https://muratkendir.github.io/geoPythonInfoTree
+site_url: https://tum-gis.github.io/geoPythonInfoTree
 theme:
     name: material
 markdown_extensions:
