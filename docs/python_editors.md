@@ -15,3 +15,4 @@
 | Wing | Yes | Yes | Limited | No |   |
 | Emacs | Yes | Yes | Yes | Yes |  |
 | Vim | Yes | Yes | Yes | Extension |
+| Bpython | Yes | Yes | Yes |   | Runs in terminal |

@@ -1,92 +1,96 @@
-| **Library Name** | **Data Type** | **Accessible Data Sources** | **Tags** |
-|:---:|:---:|:---:|:---:|
-| [altair][1] | Vector |  | visualization |
-| [ArcPy][2] | Vector & Raster | ArcGIS | ArcGIS |
-| [basemap][3] | Vector & Raster |  | projection |
-| [canopy][4] | Vector |  |  |
-| [cartopy][5] | Vector & Raster |  | analysis visualization |
-| [Cgal-bindings][6] | Vector |  |  |
-| [DataCube][7] | Raster | Satellite Imagery | satellite imagery |
-| [descartes][8] | Raster |  | image |
-| [earthpy][9] | Vector & Raster |  | plot |
-| [EoxServer][10] | Raster & Vector | Earth Observation | ESA |
-| [Fiona][11] | Vector |  | read write |
-| [FME Python][12] | Vector & Raster |  | FME |
-| [Folium][13] | Vector & Raster |  | web map leaflet |
-| [GDAL][14] | Vector & Raster |  | manipulation |
-| [geemap][15] | Raster & Vector | Google | earth engine |
-| [GeoAlchemy2][16] | Vector |  | SpatialLite PostGIS |
-| [geographiclib][17] | Vector |  | geodesic calculations |
-| [geojsonio][18] | Vector |  | geojson |
-| [Geomet][19] | Vector |  | geojson WKT WKB |
-| [Geopandas][20] | Vector |  | pandas |
-| [geoplot][21] | Vector |  | visualization |
-| [Geopy][22] | Vector | Nominatim Google | geocoder |
-| [Geos][23] | Vector |  | JTS |
-| [geotiff][24] | raster |  | tif |
-| [gippy][25] | Raster |  | image processing |
-| [Grass][26] | Vector & Raster |  |  |
-| [h3][27] | Vector |  | uber |
-| [ipyleaflet][28] | Raster |  | web map leaflet |
-| [istSOS][29] | Vector |  | Sensor |
-| [laszip][30] | PointCloud |  | LAS LAZ |
-| [liblas][31] | PointCloud |  | LAS LAZ |
-| [libosmium][32] | Vector | OSM | OSM |
-| [LİDAR][33] | Vector & Raster |  | DEM |
-| [mapboxgl-jupyter][34] | Vector & Raster | mapbox | mapbox |
-| [mapclassify][35] | Raster |  | choropleth classification |
-| [Mapnik][36] | raster |  | Mapnik Boost |
-| [MatPlotLib][37] | Vector & Raster |  | visualization |
-| [mdal][38] | Vector |  | mesh |
-| [networkx][39] | Vector |  | network analysis |
-| [Numpy][40] | Vector |  | Array |
-| [Opencv-python][41] | Raster |  | Vision |
-| [openrouteservice][42] | Vector | openrouteservice | route |
-| [OSMnx][43] | Vector | osm | network analysis |
-| [pandana][44] | Vector |  | pandas network |
-| [pdal][45] | PointCloud |  | pointcloud |
-| [peartree][46] | Vector |  | network |
-| [psycopgr][47] | Vector |  | pgrouting |
-| [pyCWS][48] | 0 |  | CSW |
-| [pygeoapi][49] | Vector |  | OGC Feature API |
-| [PyGMT][50] | Vector & Raster | Blue Marble | generic mapping tools |
-| [pylas][51] | PointCloud |  | LAS LAZ |
-| [pymap3d][52] | Vector |  | ecef coordinate |
-| [pyproj][53] | Raster & Vector |  | CS |
-| [pyQGIS][54] | Vector & Raster |  | QGIS |
-| [pyroutelib3][55] | Vector | osm | routing |
-| [pysal][56] | Vector |  | analysis |
-| [pyshp][57] | Vector |  | shape |
-| [pyWPS][58] | 0 |  | WPS |
-| [Rasterio][59] | Raster |  |  |
-| [Re][60] | Vector |  | regular expressions |
-| [routingpy][61] | Vector | google ors here | routing |
-| [RSGISLib][62] | Raster |  | remote sensing |
-| [RTree][63] | Vector |  | Spatial indexing |
-| [scikit][64] | Raster |  | image |
-| [sentinelhub][65] | Raster | sentinel landsat modis |  |
-| [Shapely][66] | Vector |  |  |
-| [urbansim][67] | Vector |  | statistical models |
-| [verde][68] | Raster |  | gridding |
-| [whitebox][69] | Vector & Raster |  | analysis |
-| [GemGIS][70] | Vector & Raster |  | height elevation |
-| [MovingPandas][71] | Vector |  | moving |
-| [GeoSnap][72] | Vector |  | Neighbourhood |
-| [GeoCube][73] | Vector |  | geopandas xarray |
-| [SQLAlchemy][74] | Database |  | SQL |
-| [GeoViews][75] | Vector & Raster |  | geographic |
-| [TensorFlow][76] | Vector & Raster |  | machine learning |
-| [Keras][77] | Vector |  | deep learning |
-| [Hugging Face][78] | Semantics |  | NLP |
-| [GeoParquet][79] | Vector & Raster |  | io |
-| [GeoPySpark][80] | Raster |  | raster processing |
-| [GeoDjango][81] | Vector & Raster |  | web framework |
-| [PyGIMLi][82] | Vector & Raster |  | geophysics |
-| [PyNIO][83] | Vector & Raster |  | climate weather |
-| [OWSLib][84] | Vector & Raster | wms wfs wmts |
-| [PyOGC][85] | Vector & Raster | wms wfs feature |
-| [Plotly][86] | Raster | wms wmts xyz |
-| [pyDeck][87] | Vector & Raster | map geojson 3D |
+ **Library Name** | **Data Type** | **Accessible Data Sources** | **Tags** 
+---|---|---|---
+ [altair][1] | Vector |  | visualization 
+ [ArcPy][2] | Vector & Raster | ArcGIS | ArcGIS 
+ [basemap][3] | Vector & Raster |  | projection 
+ [canopy][4] | Vector |  |  
+ [cartopy][5] | Vector & Raster |  | analysis visualization 
+ [Cgal-bindings][6] | Vector |  |  
+ [DataCube][7] | Raster | Satellite Imagery | satellite imagery 
+ [descartes][8] | Raster |  | image 
+ [earthpy][9] | Vector & Raster |  | plot 
+ [EoxServer][10] | Raster & Vector | Earth Observation | ESA 
+ [Fiona][11] | Vector |  | read write 
+ [FME Python][12] | Vector & Raster |  | FME 
+ [Folium][13] | Vector & Raster |  | web map leaflet 
+ [GDAL][14] | Vector & Raster |  | manipulation 
+ [geemap][15] | Raster & Vector | Google | earth engine 
+ [GeoAlchemy2][16] | Vector |  | SpatialLite PostGIS 
+ [geographiclib][17] | Vector |  | geodesic calculations 
+ [geojsonio][18] | Vector |  | geojson 
+ [Geomet][19] | Vector |  | geojson WKT WKB 
+ [Geopandas][20] | Vector |  | pandas 
+ [geoplot][21] | Vector |  | visualization 
+ [Geopy][22] | Vector | Nominatim Google | geocoder 
+ [Geos][23] | Vector |  | JTS 
+ [geotiff][24] | raster |  | tif 
+ [gippy][25] | Raster |  | image processing 
+ [Grass][26] | Vector & Raster |  |  
+ [h3][27] | Vector |  | uber 
+ [ipyleaflet][28] | Raster |  | web map leaflet 
+ [istSOS][29] | Vector |  | Sensor 
+ [laszip][30] | PointCloud |  | LAS LAZ 
+ [liblas][31] | PointCloud |  | LAS LAZ 
+ [libosmium][32] | Vector | OSM | OSM 
+ [LİDAR][33] | Vector & Raster |  | DEM 
+ [mapboxgl-jupyter][34] | Vector & Raster | mapbox | mapbox 
+ [mapclassify][35] | Raster |  | choropleth classification 
+ [Mapnik][36] | raster |  | Mapnik Boost 
+ [MatPlotLib][37] | Vector & Raster |  | visualization 
+ [mdal][38] | Vector |  | mesh 
+ [networkx][39] | Vector |  | network analysis 
+ [Numpy][40] | Vector |  | Array 
+ [Opencv-python][41] | Raster |  | Vision 
+ [openrouteservice][42] | Vector | openrouteservice | route 
+ [OSMnx][43] | Vector | osm | network analysis 
+ [pandana][44] | Vector |  | pandas network 
+ [pdal][45] | PointCloud |  | pointcloud 
+ [peartree][46] | Vector |  | network 
+ [psycopgr][47] | Vector |  | pgrouting 
+ [pyCWS][48] |  |  | CSW 
+ [pygeoapi][49] | Vector |  | OGC Feature API 
+ [PyGMT][50] | Vector & Raster | Blue Marble | generic mapping tools 
+ [pylas][51] | PointCloud |  | LAS LAZ 
+ [pymap3d][52] | Vector |  | ecef coordinate 
+ [pyproj][53] | Raster & Vector |  | CS 
+ [pyQGIS][54] | Vector & Raster |  | QGIS 
+ [pyroutelib3][55] | Vector | osm | routing 
+ [pysal][56] | Vector |  | analysis 
+ [pyshp][57] | Vector |  | shape 
+ [pyWPS][58] |  |  | WPS 
+ [Rasterio][59] | Raster |  |  
+ [Re][60] | Vector |  | regular expressions 
+ [routingpy][61] | Vector | google ors here | routing 
+ [RSGISLib][62] | Raster |  | remote sensing 
+ [RTree][63] | Vector |  | Spatial indexing 
+ [scikit][64] | Raster |  | image 
+ [sentinelhub][65] | Raster | sentinel landsat modis |  
+ [Shapely][66] | Vector |  |  
+ [urbansim][67] | Vector |  | statistical models 
+ [verde][68] | Raster |  | gridding 
+ [whitebox][69] | Vector & Raster |  | analysis 
+ [GemGIS][70] | Vector & Raster |  | height elevation 
+ [MovingPandas][71] | Vector |  | moving 
+ [GeoSnap][72] | Vector |  | Neighbourhood 
+ [GeoCube][73] | Vector |  | geopandas xarray 
+ [SQLAlchemy][74] | Database |  | SQL 
+ [GeoViews][75] | Vector & Raster |  | geographic 
+ [TensorFlow][76] | Vector & Raster |  | machine learning 
+ [Keras][77] | Vector |  | deep learning 
+ [Hugging Face][78] | Semantics |  | NLP 
+ [GeoParquet][79] | Vector & Raster |  | io 
+ [GeoPySpark][80] | Raster |  | raster processing 
+ [GeoDjango][81] | Vector & Raster |  | web framework 
+ [PyGIMLi][82] | Vector & Raster |  | geophysics 
+ [PyNIO][83] | Vector & Raster |  | climate weather 
+ [OWSLib][84] | Vector & Raster |  | wms wfs wmts 
+ [PyOGC][85] | Vector & Raster |  | wms wfs feature 
+ [Plotly][86] | Raster |  | wms wmts xyz 
+ [pyDeck][87] | Vector & Raster |  | map geojson 3D 
+ [Osrm-py][88] | Vector |  | routing 
+ [pylode][89] | Vector |  | ontology 
+ [pytdml][90] | Vector & Raster |  | AI, training, learning 
+ [esridump][91] | Vector |  | shp, geojson, esri 
 
 [1]: https://altair-viz.github.io/index.html
 [2]: https://pro.arcgis.com/en/pro-app/latest/arcpy/functions/alphabetical-list-of-arcpy-functions.htm
@@ -175,3 +179,8 @@
 [85]: https://github.com/RyanWalker277/PyOGC
 [86]: https://plotly.com/python/
 [87]: https://deckgl.readthedocs.io/en/latest/index.html
+[88]: https://github.com/gojuno/osrm-py
+[89]: https://pypi.org/project/pylode/
+[90]: https://github.com/TrainingDML/pytdml
+[91]: https://github.com/openaddresses/pyesridump
+

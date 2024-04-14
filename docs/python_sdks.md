@@ -1,7 +1,7 @@
 # Python SDKs (or APIs)
 
  **SDK/API Name** | **Category** 
-:---:|:---:
+---|---
  [AWS (Amazon)][1] | Cloud Computing 
  [Dropbox][2] | Cloud Storage 
  [Facebook Business][3] | Social Media 
@@ -19,9 +19,14 @@
  [Oracle][15] | Cloud Computing 
  [Mastadon][16] | Decentralized Social Media 
  [Ethereum][17] | Blockchain 
+ [HQGIS (Here Map)][18] | Routing, Geocode 
+ [OSRM ][19] | Routing, Geocode 
+ [GraphHopper][20] | Routing, Geocoding 
+ [OpenRouteService-py][21] | Routing 
+ [OpenTripPlanner][22] | Routing 
 
 # Publicly Available Web APIs (not only for Python)
- [Public APIs List Repository][18]
+ [Public APIs List Repository][23]
 
 [1]: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 [2]: https://www.dropbox.com/developers/reference/getting-started?_tk=guides_lp&_ad=tutorial5&_camp=get_started
@@ -40,4 +45,9 @@
 [15]: https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/pythonsdk.htm
 [16]: https://mastodonpy.readthedocs.io/en/stable/
 [17]: https://ethereum.org/en/developers/docs/programming-languages/python/
-[18]: https://github.com/public-apis/public-apis
+[18]: https://plugins.qgis.org/plugins/Hqgis/#plugin-about
+[19]: http://project-osrm.org/docs/v5.24.0/api/#
+[20]: https://docs.graphhopper.com/
+[21]: https://github.com/GIScience/openrouteservice-py
+[22]: https://docs.opentripplanner.org/en/v1.5.0/Scripting/#api
+[23]: https://github.com/public-apis/public-apis
