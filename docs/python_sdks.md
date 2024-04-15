@@ -1,6 +1,6 @@
 # Python SDKs (or APIs)
 
-Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6)
+Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6){:target="_blank"}
 
  **SDK/API Name** | **Category** 
 ---|---

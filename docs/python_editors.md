@@ -1,6 +1,6 @@
 # Python Editors / IDE's
 
-Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6)
+Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6){:target="_blank"}
 
 | **IDE / Editor Name** | **Highlighting** | **AutoComplete** | **Free** | **Ipython** | **Notes** |
 |:---:|:---:|:---:|:---:|:---:|:---:|

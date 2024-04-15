@@ -1,6 +1,6 @@
 # Python Online Resources
 
-Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6)
+Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6){:target="_blank"}
 
  **Site Name** | **Writer / Editor** | **Type** | **Language** 
 ---|---|---|---

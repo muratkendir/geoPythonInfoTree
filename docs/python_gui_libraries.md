@@ -1,6 +1,6 @@
 # Python GUI Libraries
 
-Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6)
+Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6){:target="_blank"}
 
 | **GUI Library Name** |
 |:---:|
