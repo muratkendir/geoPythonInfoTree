@@ -1,5 +1,7 @@
 # Python Online Resources
 
+Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6)
+
  **Site Name** | **Writer / Editor** | **Type** | **Language** 
 ---|---|---|---
  [Automating GIS processes][1] | University of Helsinki | reading | EN 

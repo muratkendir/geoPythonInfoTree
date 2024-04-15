@@ -2,6 +2,11 @@
 
 This repo is an informative tool to display and store brief explanations for geospatial python libraries and essential tools of Python.
 
+## Feedback 
+Please feel free to inform me about the broken links, outdated libraries or new sources which appear on the GeoPythonTree repository. -Murat Kendir- 
+[Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6)
+
+
 ## Tables
 
 Here you will find lists of some useful sources:

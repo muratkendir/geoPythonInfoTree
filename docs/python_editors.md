@@ -1,5 +1,7 @@
 # Python Editors / IDE's
 
+Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6)
+
 | **IDE / Editor Name** | **Highlighting** | **AutoComplete** | **Free** | **Ipython** | **Notes** |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | PyCharm | Yes | Yes | No | Extension | Rich web supp. |
