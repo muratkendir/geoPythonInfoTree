@@ -27,6 +27,11 @@ Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6){:target="_bl
  [Python Tutor][22] |  | Interactive, reading | EN 
  [MITx Computer Science Journey][23] | MIT | reading, blog | EN 
  [Study Guide][24] | MITx | reading | EN 
+ [Introduction to Statistics][25] | Stanford | reading, video, exercise | EN
+ [Foundations of Data Science: K-Means Clustering in Python][26] | University of London | reading, video | EN
+ [An Intuitive Introduction to Probability][27] | University Of Zurich | reading, video | EN
+ [Practical Time Series Analysis][28] | State University of New York | reading, video | EN
+
 
 [1]: https://automating-gis-processes.github.io
 [2]: https://www.codecademy.com/catalog/language/python
@@ -51,3 +56,8 @@ Feedback Form: [Feedback Form](https://forms.gle/frtqUK32Lv68Uiwr6){:target="_bl
 [22]: https://pythontutor.com/
 [23]: http://mitxcsjourney.blogspot.com/
 [24]: https://docs.google.com/document/d/1oMYRnogRrGgCtz-26E8hJYLp7Bm99JS1SP4lhdXvqpw/edit?pli=1#heading=h.wkdtdlnax0u3
+[25]: https://www.coursera.org/learn/stanford-statistics?irclickid=ReWzMUWB%3AxyKT%3ARS-WUlu0FFUkCQWszfWSEzTg0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4838646&utm_content=b2c
+[26]: https://www.coursera.org/learn/data-science-k-means-clustering-python?irclickid=ReWzMUWB%3AxyKT%3ARS-WUlu0FFUkCQWpQmWSEzTg0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4838646&utm_content=b2c
+[27]: https://www.coursera.org/learn/introductiontoprobability?irclickid=ReWzMUWB%3AxyKT%3ARS-WUlu0FFUkCQWs3GWSEzTg0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4838646&utm_content=b2c#testimonials
+[28]: https://www.coursera.org/learn/practical-time-series-analysis?irclickid=ReWzMUWB%3AxyKT%3ARS-WUlu0FFUkCQWsRvWSEzTg0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4838646&utm_content=b2c#modules
+
